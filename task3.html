@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vertical with 3 Connected Horizontals — CSS</title>
+  <style>
+    .canvas {
+      position: relative;
+      width: 800px;
+      height: 600px;
+      border: 1px solid #eee;
+      margin: 24px;
+    }
+
+    /* vertical line (spine) */
+    .vertical {
+      position: absolute;
+      left: 80px;        /* x position of the spine */
+      top: 12px;
+      bottom: 12px;
+      width: 3px;        /* thickness */
+      background: #222;
+      border-radius: 3px;
+    }
+
+    /* horizontal lines start at the spine (left: same as spine) */
+    .h-line {
+      position: absolute;
+      left: 80px;        /* aligns with the vertical's left */
+      height: 3px;       /* thickness */
+      background: #222;
+      border-radius: 3px;
+    }
+
+    .h1 { top: 48px;  width: 220px; }
+    .h2 { top: 108px; width: 160px; }
+    .h3 { top: 168px; width: 260px; }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="vertical"></div>
+    <div class="h-line h1"></div>
+    <div class="h-line h2"></div>
+    <div class="h-line h3"></div>
+  </div>
+</body>
+</html>
