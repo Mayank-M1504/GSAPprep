@@ -1,5 +1,0 @@
-# Ignore Node modules
-node_modules/
-
-# Ignore GSAP public directory (built/minified libraries)
-gsap-public/
